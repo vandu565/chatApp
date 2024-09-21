@@ -1,11 +1,11 @@
 //userRoute.js
-const express = require('express');
-const registerController = require('../controllers/registerController');
-const loginController = require('../controllers/loginController');
-const verifyEmail = require('../controllers/emailVerifyController');
-const profileController = require('../controllers/profileController');
-const messageController = require('../controllers/messageController');
-const peopleController = require('../controllers/peopleController');
+const express = require("express");
+const registerController = require("../controllers/registerController");
+const loginController = require("../controllers/loginController");
+const verifyEmail = require("../controllers/emailVerifyController");
+const profileController = require("../controllers/profileController");
+const messageController = require("../controllers/messageController");
+const peopleController = require("../controllers/peopleController");
 
 const router = express.Router();
 router.post("/register", registerController);
