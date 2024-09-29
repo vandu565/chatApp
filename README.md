@@ -16,13 +16,15 @@ A real-time chat application built with Node.js, Express, and WebSocket for inst
 ## API Endpoints
 
 ### User Routes
-- `POST /api/users/signup`: Create a new user account.
-- `POST /api/users/login`: User login.
-- `GET /api/users/profile`: Get user profile info (requires authentication).
+- `POST /register`: Create a new user account.
+- `POST /login`: User login.
+- `GET /:id/verify/:token`: Verify email.
+- `GET /profile`: View profile.
+- `POST /profile/update`: Update profile.
 
 ### Message Routes
-- `POST /api/messages`: Send a message between users.
-- `GET /api/messages/:conversationId`: Get messages in a specific conversation.
+- `GET /messages/:userId`: Display all messages.
+- `GET /people`: View active people.
 
 ## How to Run
 
